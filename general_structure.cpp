@@ -5,7 +5,7 @@ serv = Server() <- objet de classe Server qui stock l'état général du server,
 
 while(True)
 {
-	à partir du poll et du socket, on connait normalement de quel user il s'agit;
+	à partir du poll() et du socket, on connait normalement de quel user il s'agit;
 	si il est inconnu, c'est un cas particulier (voir plus bas)
 
 	recv(IRC_msg) <- recevoir des données brutes du client
