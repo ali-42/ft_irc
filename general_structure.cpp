@@ -5,6 +5,9 @@ serv = Server() <- objet de classe Server qui stock l'état général du server,
 
 while(True)
 {
+	à partir du poll et du socket, on connait normalement de quel user il s'agit;
+	si il est inconnu, c'est un cas particulier (voir plus bas)
+
 	recv(IRC_msg) <- recevoir des données brutes du client
 	if (connection d'un nouveau client) <- cas particulier à traiter car le client va envoyer deux commandes et non une seule. On saura si c'est un nouveau client en regardant son IP
 	{
@@ -22,7 +25,7 @@ while(True)
 	{
 		cmd = Command(IRC_msg) <- construire un objet de classe Command en parsant IRC_msg
 
-		rply = Reply(cmd) <- construire un objet de class Reply à partir de l'objet cmd
+		rply = Reply(cmd, user) <- construire un objet de class Reply à partir de l'objet cmd et des données du User concerné
 
 		send(rply.intostr()) <- renvoyer une réponse à la commande en données brutes
 
