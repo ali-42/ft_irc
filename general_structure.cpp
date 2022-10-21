@@ -9,7 +9,7 @@ while(True)
 	si il est inconnu, c'est un cas particulier (voir plus bas)
 
 	recv(IRC_msg) <- recevoir des données brutes du client
-	if (connection d'un nouveau client) <- cas particulier à traiter car le client va envoyer deux commandes et non une seule. On saura si c'est un nouveau client en regardant son IP
+	if (connection d'un nouveau client) <- cas particulier à traiter car le client va envoyer deux commandes et non une seule
 	{
 		if (valid_request(IRC_msg)) <- regarder si les message NICK et USER sont bien présents avec les bons paramètres
 
