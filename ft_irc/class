@@ -1,0 +1,24 @@
+- client:
+
+map<bool, channel>	operator
+map<bool, channel>	ban
+map<std:string, bool>	flags
+
+pls channel ? > map<bool, channel> channel
+
+std::string	nickname
+std::string	username
+std::string	password
+
+std::string	channel
+
+int	socket
+
+
+- channel:
+
+vector<client>	clients
+std::string	name
+map<std:string, bool>	flags
+std::string	password
+int	max_clients

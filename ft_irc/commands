@@ -1,0 +1,26 @@
+operators:
+KICK
+KILL
+MODE
+OPER
+
+server ?
+PING
+ERROR
+WALLOP?
+
+users:
+HELP
+JOIN
+PART
+
+PRIVMSG
+NOTICE
+
+PONG
+
+USER
+NICK
+PASS
+
+QUIT
