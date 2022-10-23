@@ -1,5 +1,6 @@
-- client:
-
+/* ************************** */
+/* Class client/User: ******* */
+/* ************************** */
 map<bool, channel>	operator
 map<bool, channel>	ban
 map<std:string, bool>	flags
@@ -14,11 +15,30 @@ std::string	channel
 
 int	socket
 
-
-- channel:
-
+/* ************************** */
+/* Class channel: *********** */
+/* ************************** */
 vector<client>	clients
 std::string	name
 map<std:string, bool>	flags
 std::string	password
 int	max_clients
+
+/* ************************** */
+/* Class server: ************ */
+/* ************************** */
+
+
+/* ************************** */
+/* Class command: *********** */
+/* ************************** */
+//from client to server
+- Syntax : 
+the prefix (OPTIONAL), the command (like JOIN, PRIVMSG ...), and the command parameters (like name of the chan, person to send to msg to)(maximum of fifteen (15))
+
+/* ************************** */
+/* Class reply: ************* */
+/* ************************** */
+//from server to client
+-Syntax : 
+:the prefix (MANDATORY), 3 digit code command, parameters (param 1 =  the nick of the user this reply is intended for, param 2 : the response from this list https://datatracker.ietf.org/doc/html/rfc2812#section-5)
