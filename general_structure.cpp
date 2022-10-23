@@ -7,7 +7,8 @@ while(True)
 {
 	à partir du poll() et du socket, on connait normalement de quel user il s'agit;
 	si il est inconnu, c'est un cas particulier (voir plus bas)
-
+	//alice : inconnu = nouveau client ?
+	//faire aussi gestion erreur cad si poll renvoie error
 	recv(IRC_msg) <- recevoir des données brutes du client
 	if (connection d'un nouveau client) <- cas particulier à traiter car le client va envoyer deux commandes et non une seule
 	{
