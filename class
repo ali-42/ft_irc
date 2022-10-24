@@ -1,7 +1,11 @@
+Ali :la classe server, poll, sockets et la boucle principale
+Alice : class user, reply etc
+
 /* ************************** */
 /* Class client/User: ******* */
 /* ************************** */
 map<bool, channel>	operator
+map<bool, channel>	away //ONLY IF on implemente la command AWAY
 map<bool, channel>	ban
 map<std:string, bool>	flags
 
@@ -9,12 +13,9 @@ pls channel ? > map<bool, channel> channel
 
 std::string	nickname
 std::string	username
-std::string	password
+std::string	password ? 
 std::string hostname
-
-std::string	channel
-
-int	socket
+struct sockaddr_in
 
 /* ************************** */
 /* Class channel: *********** */
@@ -22,13 +23,14 @@ int	socket
 vector<client>	clients
 std::string	name
 map<std:string, bool>	flags
-std::string	password
+std::string	password ?
 int	max_clients
 
 /* ************************** */
 /* Class server: ************ */
 /* ************************** */
-std::string hostname
+std::string hostname and/or IPaddress
+int port
 
 /* ************************** */
 /* Class command: *********** */

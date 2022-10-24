@@ -2,8 +2,10 @@ Command a faire selon les studs sur discord :
 commandes de la categorie "channel operatorations" https://datatracker.ietf.org/doc/html/rfc2812#section-3.2
 commandes de la categorie "sending messages" https://datatracker.ietf.org/doc/html/rfc2812#section-3.3 
 commandes necessaires pour te connecter et quitter dans connection registration 
-KILL et/ou DIE + PONG + MOTD  (mode k ou i au moins)
+KILL et/ou DIE + PONG + MOTD (mode k ou i au moins)
 
+MOTD + LUSER = BONUS ?
+WHO/WHOIS?
 
 - operators:
 KICK
@@ -24,6 +26,7 @@ TOPIC ?
 NAMES ?
 LIST ? 
 INVITE ?
+AWAY ? //Si on met away, alors rajouter une var dans la class user, similaire a operator
 
 PRIVMSG
 NOTICE
