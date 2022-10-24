@@ -32,4 +32,5 @@ while(True)
 
 		serv.update(cmd) <- le serveur met à jour les users et les channels de façon appropriées	
 	}
+	//sortir du while
 }

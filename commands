@@ -1,18 +1,29 @@
-operators:
+Command a faire selon les studs sur discord : 
+commandes de la categorie "channel operatorations" https://datatracker.ietf.org/doc/html/rfc2812#section-3.2
+commandes de la categorie "sending messages" https://datatracker.ietf.org/doc/html/rfc2812#section-3.3 
+commandes necessaires pour te connecter et quitter dans connection registration 
+KILL et/ou DIE + PONG + MOTD  (mode k ou i au moins)
+
+
+- operators:
 KICK
 KILL
 MODE
 OPER
 
-server ?
+- server ?
 PING
 ERROR
 WALLOP?
 
-users:
+- users:
 HELP
 JOIN
 PART
+TOPIC ?
+NAMES ?
+LIST ? 
+INVITE ?
 
 PRIVMSG
 NOTICE
@@ -22,5 +33,8 @@ PONG
 USER
 NICK
 PASS
+
+MOTD ?
+LUSER ?
 
 QUIT

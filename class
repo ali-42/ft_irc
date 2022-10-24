@@ -10,6 +10,7 @@ pls channel ? > map<bool, channel> channel
 std::string	nickname
 std::string	username
 std::string	password
+std::string hostname
 
 std::string	channel
 
@@ -27,7 +28,7 @@ int	max_clients
 /* ************************** */
 /* Class server: ************ */
 /* ************************** */
-
+std::string hostname
 
 /* ************************** */
 /* Class command: *********** */
@@ -41,4 +42,4 @@ the prefix (OPTIONAL), the command (like JOIN, PRIVMSG ...), and the command par
 /* ************************** */
 //from server to client
 -Syntax : 
-:the prefix (MANDATORY), 3 digit code command, parameters (param 1 =  the nick of the user this reply is intended for, param 2 : the response from this list https://datatracker.ietf.org/doc/html/rfc2812#section-5)
+:the prefix ( origin of a message) (MANDATORY), 3 digit code command, parameters (param 1 =  the nick of the user this reply is intended for, param 2 : the response from this list https://datatracker.ietf.org/doc/html/rfc2812#section-5)
