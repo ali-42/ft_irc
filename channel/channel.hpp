@@ -6,7 +6,7 @@
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:13:12 by amontaut          #+#    #+#             */
-/*   Updated: 2022/10/24 16:04:40 by amontaut         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:14:30 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@ class Channel
 private:
 	std::vector<User> users;
 	std::string name;
+	std::string password;
 	std::map<std::string, bool> flags;
 	int	max_clients;
 

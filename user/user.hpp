@@ -6,7 +6,7 @@
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/24 15:13:12 by amontaut          #+#    #+#             */
-/*   Updated: 2022/10/24 16:06:14 by amontaut         ###   ########.fr       */
+/*   Updated: 2022/10/24 16:15:57 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,11 +28,12 @@ private:
 	std::map<std::string, bool> flags;
 	std::string nickname;
 	std::string username;
+	std::string password;
 	std::string hostname;
 	struct sockaddr_in addr_usr;
 
 public:
-	User(std::string nickname, std::string username, std::string password);
+	User(std::string nickname, std::string username);
 	User(User const &src);
 	User &operator=(User const &rhs);
 	~User(void);
