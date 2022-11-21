@@ -1,35 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   command.hpp                                        :+:      :+:    :+:   */
+/*   checkParam.cpp                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: amontaut <amontaut@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/24 15:13:12 by amontaut          #+#    #+#             */
-/*   Updated: 2022/10/24 16:04:24 by amontaut         ###   ########.fr       */
+/*   Created: 2022/10/31 10:45:52 by ali               #+#    #+#             */
+/*   Updated: 2022/11/21 10:33:21 by amontaut         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef COMMAND_HPP
-#define COMMAND_HPP
+#include "utils.hpp"
 
-#include <iostream>
-#include <list>
-
-class Command
+bool	isChanName(const std::string& param)
 {
-private:
-	std::string prefix;
-	std::string command;
-	std::list<std::string> params;
-
-public:
-	Command(std::string command);
-	Command(Command const &src);
-	Command &operator=(Command const &rhs);
-	~Command(void);
-
-	// getters if necessary
-};
-
-#endif
+	// const char *str = param.c_str();
+	if (param[0] == '&' || param[0] == '#' || param[0] == '+' || param[0] == '!')
+		return true;
+	return false;
+}
