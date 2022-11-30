@@ -147,7 +147,7 @@ void User::execCmd(void)
 {
 	if (this->_cmd_list.find(this->_command) == this->_cmd_list.end())
 	{
-		std::cout << "> error: Command doesn't exist\n";
+        getServer()->toSend(ERR_UNKNOWNCOMMAND(getArgs(_command), getNick()), getFd());
 		return;
 	}
 	else
